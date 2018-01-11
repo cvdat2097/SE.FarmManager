@@ -26,6 +26,8 @@ namespace WPF_DEMO_QLNT
         public Dangnhap()
         {
             InitializeComponent();
+            
+            
         }
 
         private void Dn_Click(object sender, RoutedEventArgs e)

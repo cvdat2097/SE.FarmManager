@@ -97,7 +97,7 @@ namespace WPF_DEMO_QLNT
         {
             SqlConnection con = new SqlConnection(@"Data Source=" + Constant._SERVER_NAME_ + ";Initial Catalog=" + Constant._DBNAME_ + ";Integrated Security=True");
             con.Open();
-            String queary = "SELECT MASP,TENSP,LOAISP,SOLUONG,GIA GIADEXUAT FROM SANPHAM";
+            String queary = "SELECT * FROM SANPHAM";
             SqlCommand cmd = new SqlCommand(queary, con);
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable("HoatDongGanDay");
@@ -120,25 +120,12 @@ namespace WPF_DEMO_QLNT
                     con.Open();
 
                     // ================= DAT GIA SAN PHAM
-                    DataRowView drv = (DataRowView)DataGridDanhSachSanPham.SelectedItem;
-                    String masp = (drv["MASP"]).ToString();
-                    String giasp = (drv["GIADEXUAT"]).ToString();
+                    string queary = "";
+                    SqlCommand sc = new SqlCommand(queary, con);
+                    sc.ExecuteNonQuery();
+                    // ====================================
 
-                    
-
-                    //if (Convert.ToInt64(giasp) > Convert.ToInt64(TextBoxGia.Text))
-                    //{
-                    //    MessageBox.Show("Ba đặt giá lớn hơn hoặc bằng giá đề xuất");
-                    //}
-
-
-                        string queary = "insert into DONDATHANG (THUONGNHAN, SANPHAM, GIA) values ('" + Flags.MaTN + "','" + masp + "','" + TextBoxGia.Text.ToString() + "')";
-                        SqlCommand sc = new SqlCommand(queary, con);
-                        sc.ExecuteNonQuery();
-                        // ====================================
-
-                        MessageBox.Show("Đặt giá thành công!");
-
+                    MessageBox.Show("Đặt giá thành công!");
                     con.Close();
                 }
                 catch (Exception ec)
@@ -155,6 +142,6 @@ namespace WPF_DEMO_QLNT
             m.Show();
         }
 
-
+  
     }
 }

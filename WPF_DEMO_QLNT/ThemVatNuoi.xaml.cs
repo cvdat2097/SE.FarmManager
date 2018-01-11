@@ -35,6 +35,7 @@ namespace WPF_DEMO_QLNT
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            int i = 1;
             try
             {
                 SqlConnection con = new SqlConnection(@"Data Source=" + Constant._SERVER_NAME_ + ";Initial Catalog=" + Constant._DBNAME_ + ";Integrated Security=True");
@@ -44,8 +45,12 @@ namespace WPF_DEMO_QLNT
                 string vitri = VITRI.Text.ToString();
                 string tgcs = TGCS.Text.ToString();
                 string vondautu = VONDAUTU.Text.ToString();
+                if(tendv.Any(char.IsDigit)|| !tgcs.Any(char.IsDigit) ||!vondautu.Any(char.IsDigit))
+                {
+                    goto Dost;
+                }
 
-
+                i = 0;
                 // Tạo mã Vật nuôi
                 String quearyMADV = "select MAX(CONVERT(INT,RIGHT(MACTVN,3))) from CAYTRONGVATNUOI where MACTVN like 'DV%'";
                 SqlCommand cmdMADV = new SqlCommand(quearyMADV, con);
@@ -83,12 +88,15 @@ namespace WPF_DEMO_QLNT
                 cmd.ExecuteNonQuery();
 
                 con.Close();
+                if (i == 0)
+                    goto ML;
+            Dost:;
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Xin kiểm tra lại dữ liệu nhập!");
             }
-
+            ML :
             TENDV.Text = "";
            // MADV.Text = "";
             VITRI.Text = "";

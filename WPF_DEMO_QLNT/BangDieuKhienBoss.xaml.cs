@@ -95,7 +95,7 @@ namespace WPF_DEMO_QLNT
 
             sda.Fill(dt);
 
-            DatagridDonDatHang.ItemsSource = dt.DefaultView;
+            //DatagridDonDatHang.ItemsSource = dt.DefaultView;
             con.Close();
         }
 
@@ -130,34 +130,8 @@ namespace WPF_DEMO_QLNT
 
         private void ButtonGiaoDich_Click(object sender, RoutedEventArgs e)
         {
-            DataRowView drv = (DataRowView)DatagridDonDatHang.SelectedItem;
-            String madon = (drv["MADON"]).ToString();
-            String masp = (drv["SANPHAM"]).ToString();
-            String gia = (drv["GIA"]).ToString();
 
-            // Xử lý giao dịch
-            SqlConnection con = new SqlConnection(@"Data Source=" + Constant._SERVER_NAME_ + ";Initial Catalog=" + Constant._DBNAME_ + ";Integrated Security=True");
-            con.Open();
 
-            // Xoa don hang
-            string queary = "DELETE FROM DONDATHANG WHERE MADON = '" + madon + "'";
-            SqlCommand sc = new SqlCommand(queary, con);
-            sc.ExecuteNonQuery();
-
-            queary = "DELETE FROM DONDATHANG WHERE SANPHAM = '" + masp + "'";
-            SqlCommand sc2 = new SqlCommand(queary, con);
-            sc2.ExecuteNonQuery();
-
-            // Xoa san pham
-            queary = "DELETE FROM SANPHAM WHERE MASP = '" + masp + "'";
-            SqlCommand sc1 = new SqlCommand(queary, con);
-            sc1.ExecuteNonQuery();
-
-            MessageBox.Show("Giao dịch thành công");
-
-            con.Close();
-
-            DataGrid_Initialized(DatagridDonDatHang, null);
         }
     }
 }

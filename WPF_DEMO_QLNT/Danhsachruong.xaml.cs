@@ -10,6 +10,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
 using System.Data;
@@ -17,23 +18,39 @@ using System.Data;
 namespace WPF_DEMO_QLNT
 {
     /// <summary>
-    /// Interaction logic for Caytrong.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class Caytrong : Window
+    public partial class MainWindow : Window
     {
-        public Caytrong()
+        public MainWindow()
         {
             InitializeComponent();
+            //textBox.Text = ("Getting Connection ...");
+
+            SqlConnection conn = DBUtils.GetDBConnection();
+
+            try
+            {
+              //  textBox.Text = ("Openning Connection ...");
+
+                conn.Open();
+
+                //textBox.Text = ("Connection successful!");
+            }
+            catch (Exception e)
+            {
+               // textBox.Text = ("Error: " + e.Message);
+            }
+
+
         }
+
 
         private void Tim_Kiem(object sender, RoutedEventArgs e)
         {
-            if (Flags.ND == true || Flags.CH == true)
-            {
-                this.Close();
-                TK Tk = new TK();
-                Tk.Show();
-            }
+            TK t = new TK();
+            this.Close();
+            t.Show();
         }
 
 
@@ -41,12 +58,9 @@ namespace WPF_DEMO_QLNT
 
         private void Lich(object sender, RoutedEventArgs e)
         {
-            if (Flags.ND == true || Flags.CH == true)
-            {
-                this.Close();
-                Lich L = new Lich();
-                L.Show();
-            }
+            this.Close();
+            Lich L = new Lich();
+            L.Show();
 
         }
 
@@ -60,6 +74,12 @@ namespace WPF_DEMO_QLNT
         {
             this.Close();
             BangDieuKhienBoss Cp = new BangDieuKhienBoss();
+            Cp.Show();
+        }
+        private void Cay_Trong(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            Caytrong Cp = new Caytrong();
             Cp.Show();
         }
         private void Vat_Nuoi(object sender, RoutedEventArgs e)
@@ -81,6 +101,7 @@ namespace WPF_DEMO_QLNT
             Th.Show();
         }
 
+
         private void TN(object sender, RoutedEventArgs e)
         {
             this.Close();
@@ -88,13 +109,19 @@ namespace WPF_DEMO_QLNT
             T.Show();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+
+
+        private void DSR(object sender, RoutedEventArgs e)
         {
             this.Close();
-            Danh_sach_nglam Ds = new Danh_sach_nglam();
-            Ds.Show();
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Danh_sach_nglam Ds = new Danh_sach_nglam();
+            Ds.Show();
+            this.Close();
+        }
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.Close();
@@ -102,42 +129,20 @@ namespace WPF_DEMO_QLNT
             R.Show();
         }
 
-
-
-        private void CAYTRONG1_Initialized(object sender, EventArgs e)
+        private void DataGridDanhSachRuong_Initialized(object sender, EventArgs e)
         {
-
             SqlConnection con = new SqlConnection(@"Data Source=" + Constant._SERVER_NAME_ + ";Initial Catalog=" + Constant._DBNAME_ + ";Integrated Security=True");
             con.Open();
-            string sc = "select * from CAYTRONGVATNUOI where CAYTRONGVATNUOI.MACTVN like 'TV%'";
-            SqlCommand cd = new SqlCommand(sc, con);
-            SqlDataAdapter sda = new SqlDataAdapter(cd);
-            DataTable dt = new DataTable("CAYTRONG");
+            String queary = "SELECT * FROM KHUVUC";
+            SqlCommand cmd = new SqlCommand(queary, con);
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable("KhuVuc");
+
             sda.Fill(dt);
-            CAYTRONG1.ItemsSource = dt.DefaultView;
+
+            DataGridDanhSachRuong.ItemsSource = dt.DefaultView;
+            con.Close();
         }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-            ThemCayTrong R = new ThemCayTrong();
-            R.Show();
-        }
-
-        //private void DataGrid_Initialized(object sender, EventArgs e)
-        //{
-        //    SqlConnection con = new SqlConnection(@"Data Source=" + Constant._SERVER_NAME_ + ";Initial Catalog=" + Constant._DBNAME_ + ";Integrated Security=True");
-        //    con.Open();
-        //    String queary = "SELECT * FROM KHUVUC";
-        //    SqlCommand cmd = new SqlCommand(queary, con);
-        //    SqlDataAdapter sda = new SqlDataAdapter(cmd);
-        //    DataTable dt = new DataTable("KhuVuc");
-
-        //    sda.Fill(dt);
-
-        //    DataGridDanhSachRuong.ItemsSource = dt.DefaultView;
-        //    con.Close();
-        //}
 
         //private void DataGridHoatDongGanDay_Initialized(object sender, EventArgs e)
         //{
@@ -152,16 +157,33 @@ namespace WPF_DEMO_QLNT
         //    con.Close();
         //}
 
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-            MainWindow M = new MainWindow();
-            M.Show();
-        }
+        //private void Button_Click_2(object sender, RoutedEventArgs e)
+        //{
 
-        private void Window_Initialized(object sender, EventArgs e)
-        {
-        }
+        //}
+
+        //private void Button_Initialized(object sender, EventArgs e)
+        //{
+        //}
+
+        //private void Window_Initialized(object sender, EventArgs e)
+        //{
+        //    if (Flags.TN == true)
+        //    {
+
+        //    }
+        //    else if (Flags.ND == true)
+        //    {
+        //        ButtonThemNguoiLam.IsEnabled = false;
+        //        ButtonThemNguoiMua.IsEnabled = false;
+        //        ButtonNongDan.IsEnabled = false;
+        //        ButtonThuongNhan.IsEnabled = false;
+        //    }
+        //    else if (Flags.CH == true)
+        //    {
+
+        //    }
+        //}
 
         private void ButtonTroVe_Click(object sender, RoutedEventArgs e)
         {
@@ -169,5 +191,8 @@ namespace WPF_DEMO_QLNT
             this.Close();
             m.Show();
         }
+
+        
+
     }
 }
