@@ -20,7 +20,6 @@ namespace WPF_DEMO_QLNT
     /// </summary>
     public partial class ThemNgmua : Window
     {
-        int i = 1;
         SqlConnection con = new SqlConnection(@"Data Source=" + Constant._SERVER_NAME_ + ";Initial Catalog=" + Constant._DBNAME_ + ";Integrated Security=True");
 
         public ThemNgmua()
@@ -48,41 +47,16 @@ namespace WPF_DEMO_QLNT
                 string ngsi = NGS.Text.ToString();
                 string DIC = DC.Text.ToString();
                 string SAP = SP.Text.ToString();
-                if (name.Any(char.IsDigit))
-                {
 
-                    goto Dost;
-                }
-                else
-                {
-                    if (!Ab.Any(char.IsDigit))
-                    {
-
-                        goto Dost;
-                    }
-                    else
-                    {
-                        if (!CM.Any(char.IsDigit))
-                        {
-
-                            goto Dost;
-                        }
-
-                    }
-                }
-                i = 0;
                 SqlCommand sc = new SqlCommand("insert into THUONGNHAN values('" + name + "','" + GT + "','" + Ab + "','" + CM + "','" + ngsi + "','" + DIC + "','" + SAP + "')", con);
                 sc.ExecuteNonQuery();
                 con.Close();
-                if (i == 0)
-                    goto ML;
-                Dost:;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Xin kiểm tra lại dữ liệu nhập!");
+                MessageBox.Show(ex.Message);
             }
-            ML:
+
             textboxHoTen.Text = "";
             SDT.Text = "";
             NGS.Text = "";

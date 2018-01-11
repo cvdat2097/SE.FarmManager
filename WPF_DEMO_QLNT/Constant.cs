@@ -10,7 +10,7 @@ namespace WPF_DEMO_QLNT
     {
         // Ten Server
         //public static string _SERVER_NAME_ = Environment.MachineName + @"\SQLEXPRESS";
-        public static string _SERVER_NAME_ = @"A7C21-2002-1997\SQLEXPRESS";
+        public static string _SERVER_NAME_ = @"DESKTOP-020JKQK";
 
         // Ten CSDL
         public static string _DBNAME_ = "QUANLYNONGTRAI";
@@ -19,7 +19,7 @@ namespace WPF_DEMO_QLNT
         public static string _USERNAME_ = "sa";
 
         // Mat khau
-        public static string _PASSWORD_ = "123123";
+        public static string _PASSWORD_ = "123456";
 
         // Tien luong gio
         public static string _LUONG_GIO_ = "20000";

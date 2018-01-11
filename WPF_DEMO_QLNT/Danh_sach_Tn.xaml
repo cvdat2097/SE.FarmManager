@@ -89,7 +89,7 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Label VerticalAlignment="Center" FontWeight="Bold" Grid.Column="0"  Content="Số điện thoại" Margin="39,17,15,19">
+                    <Label VerticalAlignment="Center" FontWeight="Bold" Grid.Column="0"  Content="Số điện thoại" Margin="40,-1,15,1">
                         <Label.Background>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                 <GradientStop Color="Black" Offset="0"/>

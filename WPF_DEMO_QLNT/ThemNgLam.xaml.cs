@@ -19,7 +19,6 @@ namespace WPF_DEMO_QLNT
     /// </summary>
     public partial class ThemNgLam : Window
     {
-        int i = 1;
         SqlConnection con = new SqlConnection(@"Data Source=" + Constant._SERVER_NAME_ + ";Initial Catalog=" + Constant._DBNAME_ + ";Integrated Security=True");
 
         public ThemNgLam()
@@ -48,44 +47,16 @@ namespace WPF_DEMO_QLNT
                 string DIC = DC.Text.ToString();
                 string LICH = MALICH.Text.ToString();
                 string Luog = LUONG.Text.ToString();
-                if (name.Any(char.IsDigit))
-                {
 
-                    goto Dost;
-                }
-                else
-                {
-                    if (!SDT.Any(char.IsDigit))
-                    {
-
-                        goto Dost;
-                    }
-                    else
-                    {
-                        if (!CMND.Any(char.IsDigit))
-                        {
-
-                            goto Dost;
-                        }
-                        
-                        }
-                }
-                i = 0;
-                SqlCommand sc = new SqlCommand("insert into NONGDAN(HOTEN,GIOITINH,SDTND,CMND,NGAY) values('" + name + "','" + GTinh + "','" + SDT + "','" + CMND + "','" + ngsi + "','" + DIC + "','" + Luog + "','" + LICH + "',0,getdate(),'123456')", con);
+                SqlCommand sc = new SqlCommand("insert into NONGDAN values('" + name + "','" + GTinh + "','" + SDT + "','" + CMND + "','" + ngsi + "','" + DIC + "','" + Luog + "','" + LICH + "')", con);
                 sc.ExecuteNonQuery();
                 con.Close();
-                if (i == 0)
-                    goto ML;
-
-            Dost :;
             }
-            
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.Message);
             }
-            ML:
+
             HOTEN.Text = "";
             //MANL.Text = "";
             DT.Text = "";
@@ -95,9 +66,8 @@ namespace WPF_DEMO_QLNT
             DC.Text = "";
             MALICH.Text = "";
             LUONG.Text = "";
-
-
-
         }
+
+
     }
 }

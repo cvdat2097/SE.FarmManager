@@ -143,15 +143,37 @@ namespace WPF_DEMO_QLNT
             }
         }
 
+
         private void Button_Exit_Click(object sender, RoutedEventArgs e)
         {
-            Flags.CH = false;
-            Flags.ND = false;
-            Flags.TN = false;
 
-            Dangnhap m = new Dangnhap();
+           if (MessageBox.Show("Bạn có muốn đăng xuất?", "Xác nhận!!!", MessageBoxButton.YesNo,MessageBoxImage.Question)==MessageBoxResult.Yes)
+           {
+                Flags.CH = false;
+                Flags.ND = false;
+                Flags.TN = false;
+
+                Dangnhap m = new Dangnhap();
+                this.Close();
+                m.Show();
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            CreateAccount M = new CreateAccount();
             this.Close();
-            m.Show();
+            M.Show();
+        }
+
+        private void Label_Initialized(object sender, EventArgs e)
+        {
+            if (Flags.ND == true)
+                IDdangnhap.Content = Flags.MaND;
+            else if (Flags.TN == true)
+                IDdangnhap.Content = Flags.MaTN;
+            else if (Flags.CH == true)
+                IDdangnhap.Content = Flags.MaCH;
         }
     }
 }

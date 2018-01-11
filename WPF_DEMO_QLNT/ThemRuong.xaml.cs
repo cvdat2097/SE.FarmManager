@@ -86,7 +86,7 @@ namespace WPF_DEMO_QLNT
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Xin kiểm tra lại dữ liệu nhập");
+                MessageBox.Show(ex.Message);
             }
             TENKV.Text = "";
             MAKHUCVUC.Text = "";
