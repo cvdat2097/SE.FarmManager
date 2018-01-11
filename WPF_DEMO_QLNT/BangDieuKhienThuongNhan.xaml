@@ -1,0 +1,76 @@
+﻿<Window x:Class="WPF_DEMO_QLNT.BangDieuKhienThuongNhan"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_DEMO_QLNT"
+        mc:Ignorable="d"
+        Title="Lich" Height="509" Width="600" BorderThickness="10" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="backG/dc.jpg" />
+    </Window.Background>
+    <Border Padding="10">
+        <StackPanel >
+            <!--Muc 1-->
+
+            <StackPanel Margin="10,10,10,10">
+                <Grid>
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+
+                    </Grid.ColumnDefinitions>
+
+
+                    <Button Grid.Column="1" FontWeight="Bold" Content="Thêm người làm" Margin="10" Height="50" Click="Them">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                                <GradientStop Color="#FF0A247B" Offset="0"/>
+                                <GradientStop Color="#FF4CE4E4" Offset="0.486"/>
+                                <GradientStop Color="#FF4660B2" Offset="0.004"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button Name="ButtonMua" Grid.Column="1" FontWeight="Bold" Content="Mua sản phẩm" Margin="10,345,0,-327" HorizontalAlignment="Left" Width="140" Click="ButtonMua_Click">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                                <GradientStop Color="#FF0A247B" Offset="0"/>
+                                <GradientStop Color="#FF4CE4E4" Offset="0.486"/>
+                                <GradientStop Color="#FF4660B2" Offset="0.004"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button Grid.Column="2" FontWeight="Bold" Content="Tìm kiếm" Margin="0,10,20,10" Click="Tim_Kiem">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                                <GradientStop Color="#FF0A247B" Offset="0"/>
+                                <GradientStop Color="#FF4CE4E4" Offset="0.486"/>
+                                <GradientStop Color="#FF4660B2" Offset="0.004"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="ButtonTroVe" Grid.Column="0" FontWeight="Bold" Content="Trở về" Margin="10" Click="ButtonTroVe_Click">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                                <GradientStop Color="#FF0A247B" Offset="0"/>
+                                <GradientStop Color="#FF4CE4E4" Offset="0.486"/>
+                                <GradientStop Color="#FF4660B2" Offset="0.004"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+
+                </Grid>
+            </StackPanel>
+            <Button Content="Danh sách sản phẩm" Height="23" Margin="10,17,10,0"/>
+            <DataGrid x:Name="DataGridDanhSachSanPham" Height="206" Margin="10,0" Initialized="DataGridDanhSachSanPham_Initialized"/>
+            <Button Content="Giá đặt mua" Height="23" Margin="0,17,396,0"/>
+            <TextBox x:Name="TextBoxGia" HorizontalAlignment="Right" Width="156" Height="31" Margin="0,0,396,0"/>
+
+
+            <!--Muc 2-->
+            <!--Muc 3-->
+
+        </StackPanel>
+    </Border>
+</Window>

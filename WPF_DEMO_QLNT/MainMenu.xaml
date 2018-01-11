@@ -1,0 +1,53 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WPF_DEMO_QLNT" x:Class="WPF_DEMO_QLNT.MainMenu"
+        Title="MainMenu" Height="436" Width="556" Initialized="Window_Initialized" WindowStartupLocation="CenterScreen">
+    <Grid Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="161*"/>
+            <ColumnDefinition Width="387*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl x:Name="TabControlMain" HorizontalAlignment="Left" Height="311" Margin="10,43,0,0" VerticalAlignment="Top" Width="528" IsSynchronizedWithCurrentItem="True" Grid.ColumnSpan="2">
+            <TabItem x:Name="TabItemBoss"  Header="Quản lý">
+                <Grid x:Name="GridBoss" HorizontalAlignment="Left" Height="266" Margin="10,5,0,0" VerticalAlignment="Top" Width="504">
+                    <Button x:Name="ButtonVatNuoi" Content="Vật nuôi" Margin="47,47,330,179" Click="ButtonVatNuoi_Click"/>
+                    <Button x:Name="ButtonCayTrong" Content="Cây trồng" Margin="183,47,193,179" Click="ButtonCayTrong_Click"/>
+                    <Button x:Name="ButtonNongDan" Content="Nông dân" Margin="47,92,330,134" Click="ButtonNongDan_Click"/>
+                    <Button x:Name="ButtonThuongNhan" Content="Thương nhân" Margin="183,92,193,134" Click="ButtonThuongNhan_Click"/>
+                    <Button x:Name="ButtonRuong" Content="Ruộng" Margin="320,47,57,179" Click="ButtonRuong_Click"/>
+                    <Button x:Name="ButtonDonHang" Content="Đơn hàng" Margin="320,92,57,134" Click="ButtonDonHang_Click"/>
+                    <Button x:Name="ButtonThemRuong" Content="Thêm Ruộng" Margin="47,151,330,76" Click="ButtonThemRuong_Click"/>
+                    <Button x:Name="ButtonThemNongDan" Content="Thêm Nông dân" Margin="47,195,330,31" Click="ButtonThemNongDan_Click"/>
+                    <Button x:Name="ButtonThemThuongNhan" Content="Thêm Thương nhân" Margin="183,195,193,31" Click="ButtonThemThuongNhan_Click"/>
+                    <Button x:Name="ButtonThemCayTrong" Content="Thêm Cây trồng" Margin="320,151,57,76" Click="ButtonThemCayTrong_Click"/>
+                    <Button x:Name="ButtonThemVatNuoi" Content="Thêm Vật nuôi" Margin="183,151,193,76" Click="ButtonThemVatNuoi_Click"/>
+                    <Button x:Name="ButtonTimKiem" Content="Tra cứu thông tin" Margin="320,195,56,32" Click="ButtonTimKiem_Click"/>
+                </Grid>
+            </TabItem>
+
+            <TabItem x:Name="TabItemNongDan" Header="Nông dân">
+                <Grid  x:Name="GridNongDan" HorizontalAlignment="Left" Height="266" Margin="10,5,0,0" VerticalAlignment="Top" Width="504">
+                    <Button x:Name="ButtonVatNuoi1" Content="Vật nuôi" Margin="50,89,327,137" Click="ButtonVatNuoi_Click"/>
+                    <Button x:Name="ButtonCayTrong1" Content="Cây trồng" Margin="186,89,190,137" Click="ButtonCayTrong_Click"/>
+
+                    <Button x:Name="ButtonRuong1" Content="Ruộng" Margin="323,89,54,137" Click="ButtonRuong_Click"/>
+                    <Button x:Name="ButtonTimKiem1" Content="Tra cứu thông tin" Margin="50,146,326,81" Click="ButtonTimKiem_Click"/>
+                    <Button x:Name="ButtonLich" Content="Lịch làm việc" Margin="186,146,190,81" Click="ButtonLich_Click"/>
+                </Grid>
+            </TabItem>
+
+            <TabItem x:Name="TabItemThuongNhan" Header="Thương nhân">
+                <Grid  x:Name="GridThuongNhan" HorizontalAlignment="Left" Height="266" Margin="10,5,0,0" VerticalAlignment="Top" Width="504">
+                    <Button x:Name="ButtonTimKiem2" Content="Tra cứu thông tin" Margin="249,104,127,123" Click="ButtonTimKiem_Click"/>
+                    <Button x:Name="ButtonBangDieuKhienThuongNhan" Content="Đặt hàng" Margin="99,104,277,123" Click="ButtonBangDieuKhienThuongNhan_Click"/>
+                </Grid>
+            </TabItem>
+
+
+        </TabControl>
+        <Label Content="Quản lý nông trại v1.0" HorizontalAlignment="Left" Height="44" Margin="126,10,0,0" VerticalAlignment="Top" Width="251" FontFamily="Segoe UI Black" FontSize="20" Grid.Column="1"/>
+        <Button x:Name="Button_Exit" Content="Thoát" HorizontalAlignment="Left" Height="33" Margin="283,362,0,0" VerticalAlignment="Top" Width="94" Grid.Column="1" Click="Button_Exit_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,208 @@
+c:\users\admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\bin\Debug\WPF_DEMO_QLNT.exe.config
+c:\users\admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\bin\Debug\WPF_DEMO_QLNT.exe
+c:\users\admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\bin\Debug\WPF_DEMO_QLNT.pdb
+c:\users\admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\MainWindow.g.cs
+c:\users\admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\App.g.cs
+c:\users\admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT_MarkupCompile.cache
+c:\users\admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT_MarkupCompile.lref
+c:\users\admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\MainWindow.baml
+c:\users\admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.g.resources
+c:\users\admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.Properties.Resources.resources
+c:\users\admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.csproj.GenerateResource.Cache
+c:\users\admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.exe
+c:\users\admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.pdb
+C:\Users\Admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\TimKiem.g.cs
+C:\Users\Admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\TimKiem.baml
+C:\Users\Admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Lich.g.cs
+C:\Users\Admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Lich.baml
+C:\Users\Admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Chiphi.g.cs
+C:\Users\Admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Chiphi.baml
+C:\Users\Admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Khac.g.cs
+C:\Users\Admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Khac.baml
+C:\Users\Admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Caytrong.g.cs
+C:\Users\Admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Caytrong.baml
+C:\Users\Admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Vatnuoi.g.cs
+C:\Users\Admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Vatnuoi.baml
+C:\Users\Admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\ThemNgLam.g.cs
+C:\Users\Admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\ThemNgLam.baml
+C:\Users\Admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\ThemNgmua.g.cs
+C:\Users\Admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\ThemNgmua.baml
+C:\Users\Admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Ruong.g.cs
+C:\Users\Admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Ruong.baml
+C:\Users\Admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Danh_sach_nglam.g.cs
+C:\Users\Admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Danh_sach_Tn.g.cs
+C:\Users\Admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Danh_sach_nglam.baml
+C:\Users\Admin\documents\visual studio 2015\Projects\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Danh_sach_Tn.baml
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\bin\Debug\WPF_DEMO_QLNT.exe.config
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.exe
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.pdb
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\bin\Debug\WPF_DEMO_QLNT.exe
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\bin\Debug\WPF_DEMO_QLNT.pdb
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.csprojResolveAssemblyReference.cache
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Caytrong.g.cs
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Chiphi.g.cs
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Danh_sach_nglam.g.cs
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Danh_sach_Tn.g.cs
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Khac.g.cs
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Lich.g.cs
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\MainWindow.g.cs
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\ThemNgLam.g.cs
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\ThemNgmua.g.cs
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\TK.g.cs
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Vatnuoi.g.cs
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\App.g.cs
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT_MarkupCompile.cache
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT_MarkupCompile.lref
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Caytrong.baml
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Chiphi.baml
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Danh_sach_nglam.baml
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Danh_sach_Tn.baml
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Khac.baml
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Lich.baml
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\MainWindow.baml
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\ThemNgLam.baml
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\ThemNgmua.baml
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\TK.baml
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Vatnuoi.baml
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.g.resources
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.Properties.Resources.resources
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.csproj.GenerateResource.Cache
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\ThemCayTrong.baml
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\ThemVatNuoi.baml
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\ThemCayTrong.g.cs
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\ThemVatNuoi.g.cs
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\ThemRuong.g.cs
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\ThemRuong.baml
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\bin\Debug\WPF_DEMO_QLNT.exe.config
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.exe
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.pdb
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\bin\Debug\WPF_DEMO_QLNT.exe
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\bin\Debug\WPF_DEMO_QLNT.pdb
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\ThemCayTrong.baml
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\ThemVatNuoi.baml
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Caytrong.g.cs
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Chiphi.g.cs
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Danh_sach_nglam.g.cs
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Danh_sach_Tn.g.cs
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Khac.g.cs
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Lich.g.cs
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\ThemRuong.g.cs
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\ThemCayTrong.g.cs
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\ThemNgLam.g.cs
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\ThemNgmua.g.cs
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\ThemVatNuoi.g.cs
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\TK.g.cs
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Vatnuoi.g.cs
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\App.g.cs
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT_MarkupCompile.cache
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT_MarkupCompile.lref
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Caytrong.baml
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Chiphi.baml
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Danh_sach_nglam.baml
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Danh_sach_Tn.baml
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Khac.baml
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Lich.baml
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\MainWindow.baml
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\ThemRuong.baml
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\ThemNgLam.baml
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\ThemNgmua.baml
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\TK.baml
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Vatnuoi.baml
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.g.resources
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.Properties.Resources.resources
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Dangnhap.g.cs
+C:\Users\Admin\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Dangnhap.baml
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Dangnhap.g.cs
+C:\Users\Cao V. Dat\Desktop\WPF_DEMO_QLNT\WPF_DEMO_QLNT\obj\Debug\Dangnhap.baml
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\bin\Debug\WPF_DEMO_QLNT.exe.config
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.exe
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.pdb
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\bin\Debug\WPF_DEMO_QLNT.exe
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\bin\Debug\WPF_DEMO_QLNT.pdb
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.csprojResolveAssemblyReference.cache
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\ThemCayTrong.baml
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\ThemVatNuoi.baml
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\Caytrong.g.cs
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\Dangnhap.g.cs
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\Danh_sach_nglam.g.cs
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\Danh_sach_Tn.g.cs
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\Lich.g.cs
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\MainWindow.g.cs
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\ThemRuong.g.cs
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\ThemCayTrong.g.cs
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\ThemNgLam.g.cs
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\ThemNgmua.g.cs
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\ThemVatNuoi.g.cs
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\TK.g.cs
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\Vatnuoi.g.cs
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\App.g.cs
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT_MarkupCompile.cache
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT_MarkupCompile.lref
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\Caytrong.baml
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\Dangnhap.baml
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\Danh_sach_nglam.baml
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\Danh_sach_Tn.baml
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\Lich.baml
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\MainWindow.baml
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\ThemRuong.baml
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\ThemNgLam.baml
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\ThemNgmua.baml
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\TK.baml
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\Vatnuoi.baml
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.g.resources
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.Properties.Resources.resources
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.csproj.GenerateResource.Cache
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\BangDieuKhienBoss.g.cs
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\BangDieuKhienBoss.baml
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\BangDieuKhienThuongNhan.g.cs
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\BangDieuKhienThuongNhan.baml
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\MainMenu.g.cs
+C:\Users\Cao V. Dat\Desktop\Build4-Lam\WPF_DEMO_QLNT\obj\Debug\MainMenu.baml
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\bin\Debug\WPF_DEMO_QLNT.exe.config
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.exe
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.pdb
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\bin\Debug\WPF_DEMO_QLNT.exe
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\bin\Debug\WPF_DEMO_QLNT.pdb
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.csprojResolveAssemblyReference.cache
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\ThemCayTrong.baml
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\ThemVatNuoi.baml
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\Caytrong.g.cs
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\BangDieuKhienThuongNhan.g.cs
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\Dangnhap.g.cs
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\Danh_sach_nglam.g.cs
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\Danh_sach_Tn.g.cs
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\BangDieuKhienBoss.g.cs
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\Lich.g.cs
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\MainMenu.g.cs
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\MainWindow.g.cs
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\ThemRuong.g.cs
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\ThemCayTrong.g.cs
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\ThemNgLam.g.cs
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\ThemNgmua.g.cs
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\ThemVatNuoi.g.cs
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\TK.g.cs
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\Vatnuoi.g.cs
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\App.g.cs
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT_MarkupCompile.cache
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT_MarkupCompile.lref
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\Caytrong.baml
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\BangDieuKhienThuongNhan.baml
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\Dangnhap.baml
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\Danh_sach_nglam.baml
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\Danh_sach_Tn.baml
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\BangDieuKhienBoss.baml
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\Lich.baml
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\MainMenu.baml
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\MainWindow.baml
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\ThemRuong.baml
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\ThemNgLam.baml
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\ThemNgmua.baml
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\TK.baml
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\Vatnuoi.baml
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.g.resources
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.Properties.Resources.resources
+C:\Users\Cao V. Dat\Desktop\Build5\WPF_DEMO_QLNT\obj\Debug\WPF_DEMO_QLNT.csproj.GenerateResource.Cache
