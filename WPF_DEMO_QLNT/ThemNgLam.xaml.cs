@@ -19,6 +19,7 @@ namespace WPF_DEMO_QLNT
     /// </summary>
     public partial class ThemNgLam : Window
     {
+        int i = 1;
         SqlConnection con = new SqlConnection(@"Data Source=" + Constant._SERVER_NAME_ + ";Initial Catalog=" + Constant._DBNAME_ + ";Integrated Security=True");
 
         public ThemNgLam()
@@ -39,7 +40,6 @@ namespace WPF_DEMO_QLNT
             {
                 con.Open();
                 string name = HOTEN.Text.ToString();
-                string MaNLam;
                 string SDT = DT.Text.ToString();
                 string GTinh = GT.Text.ToString();
                 string CMND = CM.Text.ToString();
@@ -48,15 +48,49 @@ namespace WPF_DEMO_QLNT
                 string LICH = MALICH.Text.ToString();
                 string Luog = LUONG.Text.ToString();
 
+
+                if (name.Any(char.IsDigit))
+                {
+
+                    goto Dost;
+                }
+                else
+                {
+                    if (!SDT.Any(char.IsDigit))
+                    {
+
+                        goto Dost;
+                    }
+                    else
+                    {
+                        if (!CMND.Any(char.IsDigit))
+                        {
+
+                            goto Dost;
+                        }
+
+                    }
+                }
+                i = 0;
+
                 SqlCommand sc = new SqlCommand("insert into NONGDAN values('" + name + "','" + GTinh + "','" + SDT + "','" + CMND + "','" + ngsi + "','" + DIC + "','" + Luog + "','" + LICH + "')", con);
                 sc.ExecuteNonQuery();
                 con.Close();
+
+                // Them log
+                lib.ThemLog("Thêm nông dân " + name);
+
+                if (i == 0)
+                    goto ML;
+
+            Dost: ;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
 
+        ML:
             HOTEN.Text = "";
             //MANL.Text = "";
             DT.Text = "";

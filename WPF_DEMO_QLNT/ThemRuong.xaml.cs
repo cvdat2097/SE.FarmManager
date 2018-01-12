@@ -1,5 +1,4 @@
 ﻿using System;
-
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,7 +24,6 @@ namespace WPF_DEMO_QLNT
     public partial class Ruong : Window
     {
         SqlConnection con = new SqlConnection(@"Data Source=" + Constant._SERVER_NAME_ + ";Initial Catalog=" + Constant._DBNAME_ + ";Integrated Security=True");
-
 
         public Ruong()
         {
@@ -82,11 +80,14 @@ namespace WPF_DEMO_QLNT
                 SqlCommand sc = new SqlCommand("insert into KHUVUC ( DACTINH, TENKV, DIENTICH)  values('" + DT + "','" + name + "','" + SS + "')", con);
                 sc.ExecuteNonQuery();
                 THONGTINRUONG.Items.Add(MAKHUCVUC.Text);
+
+                // Thêm log
+                lib.ThemLog("Thêm ruộng: " + name);
                 con.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Xin kiểm tra lại dữ liệu nhập");
             }
             TENKV.Text = "";
             MAKHUCVUC.Text = "";
@@ -102,7 +103,9 @@ namespace WPF_DEMO_QLNT
                 sc.ExecuteNonQuery();
                 SqlCommand sc1 = new SqlCommand("insert into CONGVIEC (TENCV,THOIGIAN,VITRI)  values(N'Thu hoạch',5, (select MAX(MAKV) from KHUVUC))", con);
                 sc1.ExecuteNonQuery();
-
+                // Thêm log
+                lib.ThemLog("Thêm Công việc");
+                lib.ThemLog("Thêm Công việc");
                 con.Close();
             }
             catch (Exception ex)
@@ -121,6 +124,9 @@ namespace WPF_DEMO_QLNT
                 sc.ExecuteNonQuery();
                 THONGTINRUONG.Items.Remove(MAKHUCVUC.Text);
                 //THONGTINRUONG.Items.Clear();
+
+                // Them log
+                lib.ThemLog("Xóa ruộng " + MAKHUCVUC.Text.ToString());
                 con.Close();
             }
             catch (Exception ex)

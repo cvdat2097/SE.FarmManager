@@ -109,33 +109,7 @@ namespace WPF_DEMO_QLNT
 
         }
 
-        private void DataGridDanhSachRuong_Initialized(object sender, EventArgs e)
-        {
-            SqlConnection con = new SqlConnection(@"Data Source=" + Constant._SERVER_NAME_ + ";Initial Catalog=" + Constant._DBNAME_ + ";Integrated Security=True");
-            con.Open();
-            String queary = "SELECT * FROM KHUVUC";
-            SqlCommand cmd = new SqlCommand(queary, con);
-            SqlDataAdapter sda = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable("KhuVuc");
 
-            sda.Fill(dt);
-
-            DataGridDanhSachRuong.ItemsSource = dt.DefaultView;
-            con.Close();
-        }
-
-        private void DataGridHoatDongGanDay_Initialized(object sender, EventArgs e)
-        {
-            SqlConnection con = new SqlConnection(@"Data Source=" + Constant._SERVER_NAME_ + ";Initial Catalog=" + Constant._DBNAME_ + ";Integrated Security=True");
-            con.Open();
-            String queary = "SELECT * FROM HDGD";
-            SqlCommand cmd = new SqlCommand(queary, con);
-            SqlDataAdapter sda = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable("HoatDongGanDay");
-            sda.Fill(dt);
-            DataGridHoatDongGanDay.ItemsSource = dt.DefaultView;
-            con.Close();
-        }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {

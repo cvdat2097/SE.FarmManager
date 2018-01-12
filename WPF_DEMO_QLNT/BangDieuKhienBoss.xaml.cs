@@ -79,11 +79,6 @@ namespace WPF_DEMO_QLNT
             M.Show();
         }
 
-        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
         private void DataGrid_Initialized(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=" + Constant._SERVER_NAME_ + ";Initial Catalog=" + Constant._DBNAME_ + ";Integrated Security=True");
@@ -104,7 +99,6 @@ namespace WPF_DEMO_QLNT
             // Tính lương
             try
             {
-
                 SqlConnection con = new SqlConnection(@"Data Source=" + Constant._SERVER_NAME_ + ";Initial Catalog=" + Constant._DBNAME_ + ";Integrated Security=True");
                 con.Open();
 
@@ -113,6 +107,8 @@ namespace WPF_DEMO_QLNT
                 sc.ExecuteNonQuery();
 
                 MessageBox.Show("Tính lương thành công!");
+
+                lib.ThemLog("Trả lương cho nhân viên - Giờ công: " + Constant._LUONG_GIO_ + "VNĐ/h");
                 con.Close();
             }
             catch (Exception ec)
@@ -130,34 +126,43 @@ namespace WPF_DEMO_QLNT
 
         private void ButtonGiaoDich_Click(object sender, RoutedEventArgs e)
         {
-            DataRowView drv = (DataRowView)DatagridDonDatHang.SelectedItem;
-            String madon = (drv["MADON"]).ToString();
-            String masp = (drv["SANPHAM"]).ToString();
-            String gia = (drv["GIA"]).ToString();
+            if (DatagridDonDatHang.SelectedIndex == -1)
+            {
+                MessageBox.Show("Vui lòng chọn đơn hàng");
+            }
+            else
+            {
+                DataRowView drv = (DataRowView)DatagridDonDatHang.SelectedItem;
+                String madon = (drv["MADON"]).ToString();
+                String masp = (drv["SANPHAM"]).ToString();
+                String gia = (drv["GIA"]).ToString();
 
-            // Xử lý giao dịch
-            SqlConnection con = new SqlConnection(@"Data Source=" + Constant._SERVER_NAME_ + ";Initial Catalog=" + Constant._DBNAME_ + ";Integrated Security=True");
-            con.Open();
+                // Xử lý giao dịch
+                SqlConnection con = new SqlConnection(@"Data Source=" + Constant._SERVER_NAME_ + ";Initial Catalog=" + Constant._DBNAME_ + ";Integrated Security=True");
+                con.Open();
 
-            // Xoa don hang
-            string queary = "DELETE FROM DONDATHANG WHERE MADON = '" + madon + "'";
-            SqlCommand sc = new SqlCommand(queary, con);
-            sc.ExecuteNonQuery();
+                // Xoa don hang
+                string queary = "DELETE FROM DONDATHANG WHERE MADON = '" + madon + "'";
+                SqlCommand sc = new SqlCommand(queary, con);
+                sc.ExecuteNonQuery();
 
-            queary = "DELETE FROM DONDATHANG WHERE SANPHAM = '" + masp + "'";
-            SqlCommand sc2 = new SqlCommand(queary, con);
-            sc2.ExecuteNonQuery();
+                queary = "DELETE FROM DONDATHANG WHERE SANPHAM = '" + masp + "'";
+                SqlCommand sc2 = new SqlCommand(queary, con);
+                sc2.ExecuteNonQuery();
 
-            // Xoa san pham
-            queary = "DELETE FROM SANPHAM WHERE MASP = '" + masp + "'";
-            SqlCommand sc1 = new SqlCommand(queary, con);
-            sc1.ExecuteNonQuery();
+                // Xoa san pham
+                queary = "DELETE FROM SANPHAM WHERE MASP = '" + masp + "'";
+                SqlCommand sc1 = new SqlCommand(queary, con);
+                sc1.ExecuteNonQuery();
 
-            MessageBox.Show("Giao dịch thành công");
+                MessageBox.Show("Giao dịch thành công");
 
-            con.Close();
+                con.Close();
 
-            DataGrid_Initialized(DatagridDonDatHang, null);
+                DataGrid_Initialized(DatagridDonDatHang, null);
+
+                lib.ThemLog("Duyệt đơn hàng: " + madon);
+            }
         }
     }
 }

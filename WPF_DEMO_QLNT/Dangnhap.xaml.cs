@@ -21,6 +21,7 @@ namespace WPF_DEMO_QLNT
     /// </summary>
     public partial class Dangnhap : Window
     {
+
         SqlConnection con = new SqlConnection(@"Data Source=" + Constant._SERVER_NAME_ + ";Initial Catalog=" + Constant._DBNAME_ + ";Integrated Security=True");
 
         public Dangnhap()
@@ -55,6 +56,8 @@ namespace WPF_DEMO_QLNT
                                 MessageBox.Show("Đăng nhập thành công!!");
                                 Flags.MaND = Id;
 
+                                // Them log
+                                lib.ThemLog(Flags.MaND + " đăng nhập vào hệ thống");
                             }
                             break;
                         }
@@ -71,6 +74,8 @@ namespace WPF_DEMO_QLNT
                                 Flags.MaTN = Id;
                                 MessageBox.Show("Đăng nhập thành công!!");
 
+                                // Them log
+                                lib.ThemLog(Flags.MaTN + " đăng nhập vào hệ thống");
                             }
                             break;
                         }
@@ -86,6 +91,9 @@ namespace WPF_DEMO_QLNT
                                 Flags.CH = true;
                                 Flags.MaCH = Id;
                                 MessageBox.Show("Đăng nhập thành công!!");
+
+                                // Them log
+                                lib.ThemLog(Flags.MaCH + " đăng nhập vào hệ thống");
                             }
                             break;
                         }
@@ -119,10 +127,11 @@ namespace WPF_DEMO_QLNT
         {
             if (e.Key == Key.Enter)
             {
-                Dn_Click(pass, null);
+                if (Dn.Focus())
+                {
+                    Dn_Click(pass, null);
+                }
             }
         }
-
-
     }
 }

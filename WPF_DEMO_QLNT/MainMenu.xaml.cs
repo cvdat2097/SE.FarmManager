@@ -11,7 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using System.Data.SqlClient;
+using System.Data;
 namespace WPF_DEMO_QLNT
 {
     /// <summary>
@@ -96,7 +97,9 @@ namespace WPF_DEMO_QLNT
 
         private void ButtonThemThuongNhan_Click(object sender, RoutedEventArgs e)
         {
-
+            ThemNgmua m = new ThemNgmua();
+            this.Close();
+            m.Show();
         }
 
         private void ButtonTimKiem_Click(object sender, RoutedEventArgs e)
@@ -145,13 +148,85 @@ namespace WPF_DEMO_QLNT
 
         private void Button_Exit_Click(object sender, RoutedEventArgs e)
         {
-            Flags.CH = false;
-            Flags.ND = false;
-            Flags.TN = false;
+            if (MessageBox.Show("Bạn có muốn đăng xuất?", "Xác nhận!!!", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                Flags.CH = false;
+                Flags.ND = false;
+                Flags.TN = false;
 
-            Dangnhap m = new Dangnhap();
+                Dangnhap m = new Dangnhap();
+                this.Close();
+                m.Show();
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            CreateAccount M = new CreateAccount();
             this.Close();
-            m.Show();
+            M.Show();
+        }
+
+        private void Label_Initialized(object sender, EventArgs e)
+        {
+            if (Flags.ND == true)
+                IDdangnhap.Content = Flags.MaND;
+            else if (Flags.TN == true)
+                IDdangnhap.Content = Flags.MaTN;
+            else if (Flags.CH == true)
+                IDdangnhap.Content = Flags.MaCH;
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=" + Constant._SERVER_NAME_ + ";Initial Catalog=" + Constant._DBNAME_ + ";Integrated Security=True");
+            con.Open();
+            string insertmess = nhapMess.Text.ToString();
+            String M = "";
+            if (insertmess != "")
+            {
+                if (Flags.CH == true)
+                {
+                    M = "INSERT INTO CHAT (NOIDUNG) VALUES ( '" + Flags.MaCH.ToString() + " : " + insertmess + " ')";
+                }
+                else if (Flags.ND == true)
+                {
+                    M = "INSERT INTO CHAT (NOIDUNG) VALUES ('" + Flags.MaND.ToString() + " : " + insertmess + " ')";
+                }
+                else if (Flags.TN == true)
+                {
+                    M = "INSERT INTO CHAT (NOIDUNG) VALUES ('" + Flags.MaTN.ToString() + " : " + insertmess + " ')";
+                }
+            }
+            SqlCommand cmd1 = new SqlCommand(M, con);
+            SqlDataAdapter sda1 = new SqlDataAdapter(cmd1);
+            DataTable dt1 = new DataTable("M");
+            cmd1.ExecuteNonQuery();
+            con.Close();
+
+            nhapMess.Text = "";
+        }
+
+
+
+        private void nhapMess_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                if (guiMess.Focus())
+                {
+                    Button_Click_1(sender, null);
+                    nhapMess.Text = string.Empty;
+                    nhapMess.Focus();
+                }
+                // this.Close();
+            }
+        }
+
+        private void listMess_Initialized(object sender, EventArgs e)
+        {
+
         }
     }
 }
+

@@ -70,7 +70,6 @@ namespace WPF_DEMO_QLNT
                 string name = DSTN.Text.ToString();
                 SqlCommand sc = new SqlCommand("delete from THUONGNHAN where MATN ='" + DSTN.Text + "'", con);
                 sc.ExecuteNonQuery();
-                DSTN.Items.Remove(DSTN.Text);
                 //THONGTINRUONG.Items.Clear();
                 MANM.Text = "";
                 textboxHoTen.Text = "";
@@ -83,8 +82,9 @@ namespace WPF_DEMO_QLNT
 
                 SP.Text = "";
 
-
-
+                // Them log
+                lib.ThemLog("Xóa dữ liệu thương nhân " + DSTN.Text.ToString());
+                DSTN.Items.Remove(DSTN.Text);
                 con.Close();
             }
             catch (Exception ex)

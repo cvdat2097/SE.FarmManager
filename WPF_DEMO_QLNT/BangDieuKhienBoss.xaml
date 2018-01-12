@@ -54,7 +54,7 @@
                 </Grid>
             </StackPanel>
             <Button Content="ĐƠN ĐẶT HÀNG" Height="24" Margin="0,17,0,0"/>
-            <DataGrid Name="DatagridDonDatHang" Height="225" RenderTransformOrigin="0.504,0.7" SelectionChanged="DataGrid_SelectionChanged" Initialized="DataGrid_Initialized"/>
+            <DataGrid Name="DatagridDonDatHang" Height="225" RenderTransformOrigin="0.504,0.7" Initialized="DataGrid_Initialized"/>
 
 
             <!--Muc 2-->

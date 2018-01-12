@@ -61,7 +61,6 @@ namespace WPF_DEMO_QLNT
 
         private void SHOWDSNL(object sender, EventArgs e)
         {
-
             try
             {
                 SqlConnection con = new SqlConnection(@"Data Source=" + Constant._SERVER_NAME_ + ";Initial Catalog=" + Constant._DBNAME_ + ";Integrated Security=True");
@@ -97,8 +96,11 @@ namespace WPF_DEMO_QLNT
                 string name = DSNLCOMBO.Text.ToString();
                 SqlCommand sc = new SqlCommand("delete from NONGDAN where MAND ='" + DSNLCOMBO.Text + "'", con);
                 sc.ExecuteNonQuery();
-                DSNLCOMBO.Items.Remove(DSNLCOMBO.Text);
                 //THONGTINRUONG.Items.Clear();
+
+                // Them log
+                lib.ThemLog("Xóa dữ liệu " + DSNLCOMBO.Text.ToString());
+                DSNLCOMBO.Items.Remove(DSNLCOMBO.Text);
                 con.Close();
             }
             catch (Exception ex)

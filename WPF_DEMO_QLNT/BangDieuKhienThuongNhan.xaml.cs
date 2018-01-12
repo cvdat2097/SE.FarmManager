@@ -108,7 +108,11 @@ namespace WPF_DEMO_QLNT
 
         private void ButtonMua_Click(object sender, RoutedEventArgs e)
         {
-            if (TextBoxGia.Text == "")
+            if (DataGridDanhSachSanPham.SelectedIndex == -1)
+            {
+                MessageBox.Show("Vui lòng chọn sản phẩm cần mua");
+            }
+            else if (TextBoxGia.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập giá");
             }
@@ -124,7 +128,7 @@ namespace WPF_DEMO_QLNT
                     String masp = (drv["MASP"]).ToString();
                     String giasp = (drv["GIADEXUAT"]).ToString();
 
-                    
+
 
                     //if (Convert.ToInt64(giasp) > Convert.ToInt64(TextBoxGia.Text))
                     //{
@@ -132,14 +136,17 @@ namespace WPF_DEMO_QLNT
                     //}
 
 
-                        string queary = "insert into DONDATHANG (THUONGNHAN, SANPHAM, GIA) values ('" + Flags.MaTN + "','" + masp + "','" + TextBoxGia.Text.ToString() + "')";
-                        SqlCommand sc = new SqlCommand(queary, con);
-                        sc.ExecuteNonQuery();
-                        // ====================================
+                    string queary = "insert into DONDATHANG (THUONGNHAN, SANPHAM, GIA) values ('" + Flags.MaTN + "','" + masp + "','" + TextBoxGia.Text.ToString() + "')";
+                    SqlCommand sc = new SqlCommand(queary, con);
+                    sc.ExecuteNonQuery();
+                    // ====================================
 
-                        MessageBox.Show("Đặt giá thành công!");
+                    MessageBox.Show("Đặt giá thành công!");
 
                     con.Close();
+
+                    // Them log
+                    lib.ThemLog("Thương nhân " + Flags.MaTN + " đặt hàng " + masp + " - Giá: " + giasp.ToString());
                 }
                 catch (Exception ec)
                 {

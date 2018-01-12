@@ -36,6 +36,7 @@ namespace WPF_DEMO_QLNT
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            int i = 1;
             try
             {
                 SqlConnection con = new SqlConnection(@"Data Source=" + Constant._SERVER_NAME_ + ";Initial Catalog=" + Constant._DBNAME_ + ";Integrated Security=True");
@@ -45,6 +46,12 @@ namespace WPF_DEMO_QLNT
                 string vitri = VITRI.Text.ToString();
                 string tgcs = TGCS.Text.ToString();
                 string vondautu = VONDAUTU.Text.ToString();
+
+                if (tentv.Any(char.IsDigit) || !tgcs.Any(char.IsDigit) || !vondautu.Any(char.IsDigit))
+                {
+                    goto Dost;
+                }
+                i = 0;
 
                 // Tạo mã Cay trong
                 String quearyMATV = "select MAX(CONVERT(INT,RIGHT(MACTVN,3))) from CAYTRONGVATNUOI where MACTVN like 'TV%'";
@@ -76,18 +83,21 @@ namespace WPF_DEMO_QLNT
 
 
                 // THEM VAO LICH SU HOAT DONG
-                queary = "insert into HDGD(TENHD) values('Them Cay trong " + tentv + "')";
-                SqlCommand cmd = new SqlCommand(queary, con);
-                cmd.ExecuteNonQuery();
+                lib.ThemLog("Thêm Cây trồng: " + matv + " " + tentv);
                 con.Close();
+
+                if (i == 0)
+                    goto ML;
+            Dost: ;
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 MessageBox.Show(ex.Message);
             }
-           // 01644 656 534
-            
+        // 01644 656 534
+        ML:
             TENTV.Text = "";
-           // MATV.Text = "";
+            // MATV.Text = "";
             VITRI.Text = "";
             TGCS.Text = "";
             VONDAUTU.Text = "";
